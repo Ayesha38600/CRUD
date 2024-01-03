@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS CRUD</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h5>Employee</h5>
+    </div>
+
+    <div class="upper-btn-box">
+      <div class="left-box">
+        <button id="Add_Employee"><i class="fa fa-plus"></i> &nbsp Add Employee</button>
+        <button><i class="fa fa-eraser"></i> &nbsp; Clear Filtering</button>
+        <!-- &nbsp for space  -->
+      </div>
+      <div class="right-box">
+        <i class="fa fa-search"></i>
+        <input type="text " placeholder="Search" class="search"/>
+        <button>Search</button>
+      </div>
+    </div>
+
+
+    <div class="table-box">
+        <table>
+            <tr>
+                <th>Sr No</th>
+                <th>Profile</th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Office Code</th>
+                <th>Job Title</th>
+                <th>Action</th>
+            </tr>
+    <tbody class="reg-list">
+   
+
+
+
+      
+    </tbody>
+    
+         
+      
+  
+        </table>
+    </div>
+
+
+
+    <!--  -->
+    <div class="modal">
+        <i class="fa fa-times-circle close-icon"></i>
+        <div class="left-modal">
+            <div class="img-box">
+                <img src="images.png" width="150" height="150" alt="">
+                <i class="fa fa-plus"></i>
+                <input type="file">
+            </div>
+        </div>
+        <div class="right-modal">
+            <form class="register-form">
+            <div class="input-box">
+                <label for="id">ID</label>
+                <input type="text" id="id" required>
+            </div>
+            <div class="input-box">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="input-box">
+                <label for="l-name">Last Name</label>
+                <input type="text" id="l-name" required>
+            </div>
+            <div class="input-box">
+                <label for="email">Email</label>
+                <input type="text" id="email" required>
+            </div>
+
+            <div class="input-box">
+                <label for="office-code">Office Code</label>
+                <input type="text" id="office-code" required>
+            </div>
+            <div class="input-box">
+                <label for="job-title">Job Title</label>
+                <input type="text" id="job-title" required>
+            </div>
+            <!-- <div class="input-box"> -->
+        
+            <button type="submit"  >Submit</button>
+            <button type="button" disabled>Update</button> 
+          </form>
+        
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

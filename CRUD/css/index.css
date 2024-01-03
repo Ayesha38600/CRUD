@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+}
+.header h5{
+    font-weight: bold;
+    font-size: 28px;
+}
+/* upper-btn-box */
+.upper-btn-box{
+    width: 100%;
+    height: 100px;
+    /* background-color: aqua; */
+    display: flex;
+    padding: 30px;
+
+}
+.left-box{
+    width: 50%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+.right-box{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(6, 111, 76); */
+   
+}
+.left-box button , .right-box button {
+    border: none;
+    outline: none;
+    background-color: purple;
+    color: white;
+    padding: 13px;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.close-icon{
+    position: absolute;
+    right: -2px;
+    top: -1px;
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(56, 2, 59);
+    cursor: pointer;
+}
+.right-box i{
+    font-size: 25px;
+    color: purple;
+    padding: 10px;
+}
+.right-box input{
+    padding: 13px; border: none;
+    outline: none;
+    border-bottom: 3px solid black;
+    width: 70%;
+}
+
+/* .table-box */
+.table-box{
+    width: 100%;
+    padding: 30px;
+}
+.table-box table{
+    width: 100%;
+    /* border: 1px solid #ccc; */
+    /* border-top: none;
+    border-right: none;
+    border-left: none; */
+
+}
+.table-box table tr th{
+    border-right: 1px solid #ccc;
+    padding: 30px 0 0;
+    border-bottom: 1px solid #ccc;
+}
+.table-box table tr td{
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0 0;
+    text-align: center;
+}
+.table-box table tr td button{
+    border: none;
+    outline: none;
+    background-color: purple;
+    color: white;
+  width: 30%;
+  padding: 5px 0px 5px;
+
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+/* modal */
+.modal{
+    width: 60%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 500px;
+    background-color:#f2f2f2;
+    transform: translate(-50%, -50%);
+    display: flex;
+    border:2px solid purple;
+    /* position: relative; */
+    height: auto;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    animation: popup 0.7s;
+
+}
+@keyframes popup {
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.4);
+    }
+    60%{
+      transform: scale(1.1);
+    }
+    70%{
+      transform: scale(1.2);
+    }
+    80%{
+      transform: scale(1);
+    }
+    90%{
+      transform: scale(1.1);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+.modal .left-modal{
+    width: 30%;
+    height: 100%;
+    background-color:#f2f2f2;
+}
+.modal .right-modal{
+    width: 70%;
+    height: 100%;
+    /* background-color: #750808; */
+    border-left: 2px solid purple;   
+    padding: 30px;
+}
+/*groove It displays a border with a carved appearance */
+.img-box{
+    width: 100%;
+    height: 300px;
+    /* background-color: aqua; */
+    display: flex;
+    padding: 30px;
+    position: relative;
+}
+.img-box img{
+    border-radius: 10px;
+}
+.img-box i{
+    font-size: 30px;
+    padding: 10px;
+    position: absolute;
+    right: 40px;
+    top: 90px;
+}
+.img-box input{
+    width: 40px;
+    height: 40px;
+    position: absolute;right: 40px;
+    top: 90px;
+    
+    opacity: 0;
+ 
+
+}
+.input-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.input-box label{
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px;
+    /* margin: 15px 0px; */
+
+}
+.input-box  input{
+    width: 70%;
+    margin: 10px 0px;
+    border: none;
+    padding: 13px;
+    outline: none;
+    border-bottom: 3px solid purple;
+    background-color: transparent;
+}
+.input-box button{
+    border: none;
+    outline: none;
+    background-color: purple;
+    color: white;
+  width: 30%;
+  padding: 5px 0px 5px;
+
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.right-modal button{
+ 
+  width: 20%;
+  height: 33px;
+  background-color: rgb(105, 8, 118);
+  color: white;
+
+}
+
